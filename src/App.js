@@ -1,29 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-import {BrowserRoute as Router, Routes, Route} from 'react-router-dom';
-import homePage from './Components/Pages/Home/homePage';
-import productPage from './Components/Pages/Product/productPage';
-import teamPage from './Components/Pages/Team/teamPage';
-import contactPage from './Components/Pages/Contact/contactPage';
-import Navbar from './Components/Navbar';
-import Footbar from './Components/Footbar';
+//import logo from './logo.svg';
+//import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import NavigationBar from './Components/Navbar';
+import HomePage from './Components/Pages/Home/homePage';
+import ProductPage from './Components/Pages/Product/productPage';
+import TeamPage from './Components/Pages/Team/teamPage';
+import ContactPage from './Components/Pages/Contact/contactPage';
+import FootnoteBar from './Components/Footbar';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <div>
-          <Navbar/>
+          <NavigationBar/>
           <Routes>
-            <Route path="/" element={<homePage/>}/>
-            <Route path="/Homepage" element={<homePage/>}/>
-            <Route path="/Product" element={<productPage/>}/>
-            <Route path="/Team" element={<teamPage/>}/>
-            <Route path="/Contancts" element={<contactPage/>}/>
+            <Route path="/" element={<HomePage />}/>
+            <Route path="/Homepage" element={<HomePage />}/>
+            <Route path="/Product" element={<ProductPage />}/>
+            <Route path="/Team" element={<TeamPage />}/>
+            <Route path="/Contacts" element={<ContactPage />}/>
           </Routes>
-          <Footbar/>
+          <FootnoteBar/>
         </div>
       </Router>
     </div>
   );
 }
+
+export default App;

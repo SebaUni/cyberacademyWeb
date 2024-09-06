@@ -6,7 +6,7 @@ import "./contactStyle.css";
 //Vista asociada a la Seccion de Contacto
 const ContactPage = () =>{
     return (
-        <div className="Page" title="Contact">
+        <div className="Content">
             <h1>Contact</h1>
         </div>
     );

@@ -6,7 +6,7 @@ import "./productStyle.css";
 //Vista asociada a la Seccion del Producto
 const ProductPage = () =>{
     return (
-        <div className="Page" title="Product">
+        <div className="Content">
             <h1>Product</h1>
         </div>
     );

@@ -1,35 +1,46 @@
 //import React from 'react';
 //import { useState } from 'react';
 import { Link } from 'react-router-dom';
+//import { LogoEmpresa, LogoApp, LogoFeria, LogoUSM } from './../Assets/Images';
 import Button from '@mui/material/Button';
 import "./NavbarStyle.css";
+
+const Logos = require("./../Assets/logos")
 
 //Barra de Navegacion de la Pagina
 const NavigationBar= () => {
     return (
         <nav className="navbar">
-            <ul>
-                <li>
-                    <div>Logo Pre-Empresa</div>
-                </li>
-                <li>
-                    <div>Cyber Academy</div>
-                </li>
-                <li className="navMenu">
-                    <Button variant="contained" component={Link} to='/Homepage'>
-                        Inicio
-                    </Button>
-                    <Button variant="contained" component={Link} to='/Product'>
-                        ¿Que es Cyber Academy?
-                    </Button>
-                    <Button variant="contained" component={Link} to='/Team'>
-                        ¿Quiénes Somos?
-                    </Button>
-                    <Button variant="contained" component={Link} to='/Contacts'>
-                        Contactenos
-                    </Button>
-                </li>
-            </ul>
+            <div className="Image">
+                <Logos.LogoEmpresa/>
+            </div>
+            <div className="Title">
+                <h1>Cyber Academy</h1>
+            </div>
+            <div className="Buttons">
+                <ul>
+                    <li>
+                        <Button className="NavButton" variant="text" component={Link} to='/Homepage'>
+                            Inicio
+                        </Button>
+                    </li>
+                    <li>
+                        <Button className="NavButton" variant="text" component={Link} to='/Product'>
+                            ¿Que es Cyber Academy?
+                        </Button>
+                    </li>
+                    <li>
+                        <Button className="NavButton" variant="text" component={Link} to='/Team'>
+                            ¿Quiénes Somos?
+                        </Button>
+                    </li>
+                    <li>
+                        <Button className="NavButton" variant="text" component={Link} to='/Contacts'>
+                            Contactenos
+                        </Button>
+                    </li>
+                </ul>
+            </div>
         </nav>
     );
 }

@@ -1,1 +1,75 @@
+.Content .About .Title{
+    text-align: center;
+    font-size: auto;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+.Content .About .Info {
+    display: flex;
+    box-sizing: border-box;
+    justify-content:space-between;
+    align-items: center;
+    width: auto;
+    height: 50%;
+    background-color: white;
+    padding: 10px 20px;
+    columns: 2;
+}
+
+.Content .About .Info .Image {
+    width: 100%;
+}
+
+.Content .About .Info .Image img{
+    flex: 2;
+    padding: 0;
+    width:100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Content .About .Info .Texto {
+    text-align: center;
+    font-size: auto;
+    color: black;
+    width: 100%;
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Content .About .Problems h1{
+    text-align: left;
+    font-size: auto;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Content .About .Problems div{
+    text-align: center;
+    font-size: auto;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Content .About .Solutions h1{
+    text-align: left;
+    font-size: auto;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Content .About .Solutions div{
+    text-align: center;
+    font-size: auto;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}

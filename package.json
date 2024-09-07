@@ -1,6 +1,6 @@
 {
   "name": "cyberacademy-web",
-  "homepage": "https://SebaUni.github.io/Cyberacademy/",
+  "homepage": "https://SebaUni.github.io/cyberacademyWeb/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

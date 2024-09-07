@@ -11,6 +11,9 @@ const FootnoteBar=() => (
         <div className="Image">
             <Logos.LogoEmpresa/>
         </div>
+        <div className="Creator">
+            <h3>Creado por<br/>Chibitech</h3>
+        </div>
         <div className="RRSS">
             Redes Sociales:
         </div>

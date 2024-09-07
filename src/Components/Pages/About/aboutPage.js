@@ -1,15 +1,15 @@
 //import React from 'react';
 //import { useState } from 'react';
-import "./productStyle.css";
+import "./aboutStyle.css";
 
 
 //Vista asociada a la Seccion del Producto
-const ProductPage = () =>{
+const AboutPage = () =>{
     return (
         <div className="Content">
-            <h1>Product</h1>
+            <h1>About</h1>
         </div>
     );
 };
 
-export default ProductPage;
+export default AboutPage;

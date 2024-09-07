@@ -25,8 +25,8 @@ const NavigationBar= () => {
                         </Button>
                     </li>
                     <li>
-                        <Button className="NavButton" variant="text" component={Link} to='/Product'>
-                            ¿Que es Cyber Academy?
+                        <Button className="NavButton" variant="text" component={Link} to='/About'>
+                            Acerca de Chibitech
                         </Button>
                     </li>
                     <li>

@@ -11,7 +11,7 @@ import FootnoteBar from './Components/Footbar';
 function App() {
   return (
     <div className="App">
-      <Router basename="cyberacademy_website">
+      <Router>
         <div>
           <NavigationBar/>
           <Routes>

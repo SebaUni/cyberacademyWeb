@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cyberacademyWeb/static/css/main.65d3c55d.css",
-    "main.js": "/cyberacademyWeb/static/js/main.fc57dfc4.js",
+    "main.js": "/cyberacademyWeb/static/js/main.73b73a80.js",
     "static/js/453.58d2993d.chunk.js": "/cyberacademyWeb/static/js/453.58d2993d.chunk.js",
     "static/media/LogoEmpresa.png": "/cyberacademyWeb/static/media/LogoEmpresa.39cac174cc3fb87fb9b2.png",
     "static/media/LogoAplicacion.png": "/cyberacademyWeb/static/media/LogoAplicacion.7908b296b2cce55aeea0.png",
@@ -9,11 +9,11 @@
     "static/media/LogosFeriaSoftware.png": "/cyberacademyWeb/static/media/LogosFeriaSoftware.094abe3ad7291b9daa8f.png",
     "index.html": "/cyberacademyWeb/index.html",
     "main.65d3c55d.css.map": "/cyberacademyWeb/static/css/main.65d3c55d.css.map",
-    "main.fc57dfc4.js.map": "/cyberacademyWeb/static/js/main.fc57dfc4.js.map",
+    "main.73b73a80.js.map": "/cyberacademyWeb/static/js/main.73b73a80.js.map",
     "453.58d2993d.chunk.js.map": "/cyberacademyWeb/static/js/453.58d2993d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65d3c55d.css",
-    "static/js/main.fc57dfc4.js"
+    "static/js/main.73b73a80.js"
   ]
 }

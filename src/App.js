@@ -11,7 +11,7 @@ import FootnoteBar from './Components/Footbar';
 function App() {
   return (
     <div className="App">
-      <Router basename='/cyberacademyWeb'>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <NavigationBar/>
           <Routes>

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/cyberacademy_website/static/css/main.65d3c55d.css",
-    "main.js": "/cyberacademy_website/static/js/main.71a7d8c1.js",
-    "static/js/453.3e5a24e7.chunk.js": "/cyberacademy_website/static/js/453.3e5a24e7.chunk.js",
-    "static/media/LogoEmpresa.png": "/cyberacademy_website/static/media/LogoEmpresa.39cac174cc3fb87fb9b2.png",
-    "static/media/LogoAplicacion.png": "/cyberacademy_website/static/media/LogoAplicacion.7908b296b2cce55aeea0.png",
-    "static/media/LogoUniversidad.png": "/cyberacademy_website/static/media/LogoUniversidad.949d5b8946a98061b160.png",
-    "static/media/LogosFeriaSoftware.png": "/cyberacademy_website/static/media/LogosFeriaSoftware.094abe3ad7291b9daa8f.png",
-    "index.html": "/cyberacademy_website/index.html",
-    "main.65d3c55d.css.map": "/cyberacademy_website/static/css/main.65d3c55d.css.map",
-    "main.71a7d8c1.js.map": "/cyberacademy_website/static/js/main.71a7d8c1.js.map",
-    "453.3e5a24e7.chunk.js.map": "/cyberacademy_website/static/js/453.3e5a24e7.chunk.js.map"
+    "main.css": "/cyberacademyWeb/static/css/main.65d3c55d.css",
+    "main.js": "/cyberacademyWeb/static/js/main.fc57dfc4.js",
+    "static/js/453.58d2993d.chunk.js": "/cyberacademyWeb/static/js/453.58d2993d.chunk.js",
+    "static/media/LogoEmpresa.png": "/cyberacademyWeb/static/media/LogoEmpresa.39cac174cc3fb87fb9b2.png",
+    "static/media/LogoAplicacion.png": "/cyberacademyWeb/static/media/LogoAplicacion.7908b296b2cce55aeea0.png",
+    "static/media/LogoUniversidad.png": "/cyberacademyWeb/static/media/LogoUniversidad.949d5b8946a98061b160.png",
+    "static/media/LogosFeriaSoftware.png": "/cyberacademyWeb/static/media/LogosFeriaSoftware.094abe3ad7291b9daa8f.png",
+    "index.html": "/cyberacademyWeb/index.html",
+    "main.65d3c55d.css.map": "/cyberacademyWeb/static/css/main.65d3c55d.css.map",
+    "main.fc57dfc4.js.map": "/cyberacademyWeb/static/js/main.fc57dfc4.js.map",
+    "453.58d2993d.chunk.js.map": "/cyberacademyWeb/static/js/453.58d2993d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65d3c55d.css",
-    "static/js/main.71a7d8c1.js"
+    "static/js/main.fc57dfc4.js"
   ]
 }

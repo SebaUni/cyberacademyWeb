@@ -1,0 +1,73 @@
+/*Estilo de la NavigationBar*/
+.navbar {
+    display: flex;
+    box-sizing: border-box;
+    justify-content:space-between;
+    align-items: center;
+    width: auto;
+    height: 65px;
+    background-color: blue;
+    padding: 10px 20px;
+}
+
+/*Estilo de la Imagen en la NavigationBar*/
+.navbar .Image img{
+    flex: 1;
+    padding: 0;
+    width: 50px;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Estilo de la Seccion del Titulo en la NavigationBar*/
+.navbar .Title {
+    flex: 2;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: auto;
+    color: white;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Estilo del Listado con Botones del NavigationBar*/
+.navbar .Buttons ul {
+    flex: 3;
+    flex-grow: 2;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Estilo del la Seccion de un Boton en el NavigationBar*/
+.navbar .Buttons ul li {
+    display: inline-block;
+}
+
+/*Estilo del Boton en el NavigationBar*/
+.navbar .Buttons ul li .NavButton{
+    background-color: transparent;
+    margin-left: 5px;
+    color: rgb(195, 195, 195);
+    font-size: large;
+    transition: transform 0.7s ease;
+}
+
+.navbar .Buttons ul li .NavButton:hover{
+    transform: scale(1.2,1.2);
+    color: white;
+    opacity: 100%;
+}
+
+.navbar .Buttons ul:has(li .NavButton:hover) li .NavButton:not(:hover){
+    transform: scale(0.8,0.8);
+    color: rgb(196, 196, 196);
+    opacity: 80%;
+}

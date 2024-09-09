@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import './page/index.scss';
+@import './nav-bar/index.scss';
+@import './breadcrumbs/index.scss';
+@import './map.scss';
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #D3EAC7;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}

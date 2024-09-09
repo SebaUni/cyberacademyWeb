@@ -2,7 +2,7 @@
 //import { useState } from 'react';
 import "./teamStyle.css";
 
-const Logos = require("./../../../Assets/logos");
+const Logos = require("../../Assets/logos");
 
 //Vista asociada a la Seccion del Equipo
 const TeamPage = () =>{

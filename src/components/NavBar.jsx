@@ -11,6 +11,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import LogoEmpresa from '../assets/LogoEmpresa.png';
+import LogoAplicacion from '../assets/LogoAplicacion.png';
 
 
 
@@ -29,9 +30,15 @@ function NavBar() {
     },
   };
 
+  const containerStyles = {
+    display: 'flex',
+    justifyContent: 'center', // Centra horizontalmente
+    alignItems: 'center',     // Centra verticalmente
+  };
+
   const pages = [
     {"name":"Inicio","href":"/"},
-    {"name":"¡Quienes Somos?","href":"/AboutUs"}, 
+    {"name":"¿Quienes Somos?","href":"/AboutUs"}, 
     {"name":"Contacto","href":"/Contact"},
   ];
 
@@ -63,8 +70,9 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            <img src={LogoEmpresa} height={"100vh"} width = {"80vh"} alt='logo pagina' />
-            <br />
+            <div style={containerStyles}>
+              <img src={LogoAplicacion} height={"80vh"} width = {"80vh"} alt='logo pagina' />
+            </div>
             <h1>Cyber Academy</h1>
           </Typography>
           <Box 
@@ -131,8 +139,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            <img src={LogoEmpresa} height={"100vh"} width = {"100vh"} alt='logo pagina' />
-            <br />
+            <img src={LogoAplicacion} height={"80vh"} width = {"100vh"} alt='logo pagina' />
             <h1>Cyber Academy</h1>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', lg: 'flex' }}} justifyContent="right">

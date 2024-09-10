@@ -26,6 +26,7 @@ function AboutUsPage() {
     return (
         <div style={{backgroundColor:"#F1F1F1"}}>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#109BE1'}} >
+                <Separador altura="250px"/>
                 <Grid container alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
                     <Grid item xs ={6}>
                         <img src={LogoEmpresa} width={"20%"}/>
@@ -42,7 +43,7 @@ function AboutUsPage() {
                             }}
                         >
                             <Typography variant='h3' align='center' sx={{ fontWeight:'bold'}}>
-                                ¿Cómo Surge Cyber Academy?
+                                Chibi Tech
                             </Typography>
                             <Separador altura="5px"/>
                             <Typography variant="h8" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
@@ -51,8 +52,9 @@ function AboutUsPage() {
                         </Paper>
                     </Grid>
                 </Grid>
+                <Separador altura="50px"/>
             </Container>
-            <Separador altura="50px"/>
+            <Separador altura="80px"/>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#F1F1F1'}} >
                 <Grid container alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
                     <Grid item xs ={6}>
@@ -105,9 +107,9 @@ function AboutUsPage() {
                     </Grid>
                 </Grid>
             </Container>
-            <Separador altura="50px"/>
+            <Separador altura="80px"/>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#17191E'}} >
-                <Separador altura="50px"/>
+                <Separador altura="150px"/>
                 <Grid container alignItems="center" justifyContent='center' rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
                     <Grid item xs ={4}>
                         <div style={containerStyles}>

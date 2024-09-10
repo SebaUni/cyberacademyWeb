@@ -138,7 +138,7 @@ function Footer() {
                     sx={{
                         borderColor: "#B0B4B5",
                         borderWidth: "1px",
-                        width: "80%",
+                        width: "95%",
                         margin: '0 auto'
                     }}
                 />

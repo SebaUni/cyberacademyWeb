@@ -30,34 +30,35 @@ function HomePage() {
         <div style={{backgroundColor:"#F1F1F1"}}>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#17191E'}} >
                 <Grid container alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
-                    <Grid item xs ={6}>
-                        <Typography variant='h3' align='center' sx={{color: 'white', fontWeight:'bold'}}>
-                            Esto es un slogan representativo de Cyber Academy
+                    <Grid item xs ={7}>
+                        <Separador altura="50px"/>
+                        <Typography variant='h3' align='justify' sx={{color: 'white', fontWeight:'bold'}}>
+                            Esto es un slogan representativo de <span style={{color:'blue'}}>Cyber Academy</span>
                         </Typography>
                         <Separador altura="25px"/>
                         <Grid container spacing={1} sx={containerStyles}>
                             {EnfoqueInfo.map((data) => (
                                 <Grid item  xs={3} sx={enfoqueStyles}>
-                                    <Typography variant='h6' align='center' sx={{fontWeight:'bold'}}>
+                                    <Typography variant='h6' align='center' sx={{color: 'white', fontWeight:'bold'}}>
                                         {data.title}
                                     </Typography>
                                     <div style={containerStyles}>
-                                        <img src={LogoAplicacion} width={"50%"}/>
+                                        <img src={LogoAplicacion} width={"45%"}/>
                                     </div>
                                 </Grid>
                             ))}
                         </Grid>
-                    </Grid>
-                    <Grid item xs ={6}>
-                        <img src={LogoAplicacion} width={"80%"}/>
+                        <Separador altura="50px"/>
                     </Grid>
                 </Grid>
             </Container>
+            <Separador altura="50px"/>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#F1F1F1'}} >
+                <Separador altura="25px"/>
                 <Grid container alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
                     <Grid item xs ={6}>
                         <Typography variant='h3' align='center' sx={{color: 'black', fontWeight:'bold'}}>
-                            ¿Qué es Cyber Academy?
+                            ¿Qué es <span style={{color:'blue'}}>Cyber Academy</span>?
                         </Typography>
                         <Separador altura="5px"/>
                         <Paper 
@@ -65,6 +66,7 @@ function HomePage() {
                             sx={{
                             padding:"15px",
                             margin:"5px",
+                            backgroundColor: "transparent",
                             color:"black",
                             borderRadius:5
                             }}
@@ -84,6 +86,7 @@ function HomePage() {
                             sx={{
                             padding:"15px",
                             margin:"5px",
+                            backgroundColor: "transparent",
                             color:"black",
                             borderRadius:5
                             }}
@@ -95,19 +98,20 @@ function HomePage() {
                     </Grid>
                 </Grid> 
             </Container>
-            <Separador altura="5px"/>
+            <Separador altura="50px"/>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#F1F1F1'}} >
                 <Paper 
                     elevation={0}
                     sx={{
                     padding:"15px",
                     margin:"5px",
+                    backgroundColor: "transparent",
                     color:"black",
                     borderRadius:5
                     }}
                 >
                     <Typography variant='h3' align='center' sx={{color: 'black', fontWeight:'bold'}}>
-                        ¿Cómo Surge Cyber Academy?
+                        ¿Cómo Surge <span style={{color:'blue'}}>Cyber Academy</span>?
                     </Typography>
                     <Separador altura="5px"/>
                     <Typography variant="h8" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
@@ -115,7 +119,7 @@ function HomePage() {
                     </Typography>
                 </Paper>
             </Container>
-            <Separador altura="25px"/>
+            <Separador altura="50px"/>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#17191E'}} >
                 <Paper 
                     elevation={0}
@@ -128,9 +132,9 @@ function HomePage() {
                     }}
                 >
                     <Typography variant='h3' align='center' sx={{fontWeight:'bold'}}>
-                        ¿Cómo Surge Cyber Academy?
+                        ¿Cómo Surge <span style={{color:'blue'}}>Cyber Academy</span>?
                     </Typography>
-                    <Separador altura="5px"/>
+                    <Separador altura="25px"/>
                     <Card sx={{minWidth: 300, flexGrow: 1}}>
                         <CardMedia
                             component="iframe"
@@ -142,6 +146,7 @@ function HomePage() {
                         />
                     </Card>
                 </Paper>
+                <Separador altura="50px"/>
             </Container>
         </div>
     );

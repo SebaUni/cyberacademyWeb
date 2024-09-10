@@ -31,7 +31,7 @@ function ContactPage() {
     return (
         <div style={{backgroundColor:"#F1F1F1"}}>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#109BE1'}} >
-            <Separador altura="125px"/>
+            <Separador altura="250px"/>
                 <Grid container alignItems="center" justifyContent='center' rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
                     <Grid item>
                         <Typography variant='h3' sx={{color:'white', fontWeight:'bold'}}>
@@ -40,7 +40,7 @@ function ContactPage() {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Separador altura="125px"/>
+                <Separador altura="50px"/>
             </Container>
             <Separador altura="125px"/>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#F1F1F1'}} >
@@ -48,7 +48,7 @@ function ContactPage() {
                     <Grid item xs={2.5} sx={redesStyles}>
                         <InstagramIcon width="50%"/>
                         <Typography variant='h4' sx={{ fontWeight:'bold'}}>
-                            Instragram
+                            Instagram
                         </Typography>
                     </Grid>
                     <Grid item xs={2.5} sx={redesStyles}>

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/cyberacademyWeb/static/css/main.e6c13ad2.css",
-    "main.js": "/cyberacademyWeb/static/js/main.652dc9d9.js",
+    "main.js": "/cyberacademyWeb/static/js/main.e001a4d1.js",
     "static/js/453.9e159338.chunk.js": "/cyberacademyWeb/static/js/453.9e159338.chunk.js",
     "static/media/LogoEmpresa.png": "/cyberacademyWeb/static/media/LogoEmpresa.39cac174cc3fb87fb9b2.png",
     "static/media/LogoAplicacion.png": "/cyberacademyWeb/static/media/LogoAplicacion.7908b296b2cce55aeea0.png",
     "index.html": "/cyberacademyWeb/index.html",
     "main.e6c13ad2.css.map": "/cyberacademyWeb/static/css/main.e6c13ad2.css.map",
-    "main.652dc9d9.js.map": "/cyberacademyWeb/static/js/main.652dc9d9.js.map",
+    "main.e001a4d1.js.map": "/cyberacademyWeb/static/js/main.e001a4d1.js.map",
     "453.9e159338.chunk.js.map": "/cyberacademyWeb/static/js/453.9e159338.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.652dc9d9.js"
+    "static/js/main.e001a4d1.js"
   ]
 }

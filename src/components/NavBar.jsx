@@ -185,7 +185,7 @@ function NavBar() {
               </div> 
             </Typography>
             {/* Gap entre el Contenedor del Logo y los Botones */}
-            <div style={{width: "45.99%"}}></div>
+            <div style={{width: "50vh"}}></div>
             {/* Configurando los Botones de Navegacion en la Aplicacion */}
             <Box 
               sx={{ 
@@ -219,7 +219,7 @@ function NavBar() {
                 onClose={handleCloseNavMenu}
                 sx={{
                   display: { xs: "block", lg: "none" },
-                  gap: "2.24%",
+                  gap: "5vh",
                   marginRight: "10.21%",
                   marginTop: "1.41%",
                   marginBottom: "1.41%",
@@ -275,7 +275,7 @@ function NavBar() {
               </div> 
             </Typography>
             {/* Gap entre el Contenedor del Logo y los Botones */}
-            <div style={{width: "45.99%"}}></div>
+            <div style={{width: "50vh"}}></div>
             {/* Configurando los Botones de Navegacion en la Aplicacion */}
             <Box 
               sx={{ 

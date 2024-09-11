@@ -46,8 +46,8 @@ function HomePage() {
                     display:'flex', 
                     justifyContent:'center', 
                     backgroundColor: Color_Eeri_Black,
-                    paddingTop: "5.79%",
-                    paddingBottom: "2.82%",
+                    paddingTop: "8vh",
+                    paddingBottom: "8vh",
                 }} 
             >
                 <Grid container alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
@@ -57,19 +57,19 @@ function HomePage() {
                             sx={{
                                 width: "100%", 
                                 alignItems: "center", 
-                                paddingLeft: "10.75%",
+                                paddingLeft: "10vh",
                                 color: Color_White, 
                                 fontWeight:'bold'
                         }}
                         >
                             Esto es un slogan representativo de <span style={{color:'blue'}}>Cyber Academy</span>
                         </Typography>
-                        <Separador altura="12.50%"/>
+                        <Separador altura="15vh"/>
                         <Grid container spacing={1} sx={{
                             display: 'flex',
                             justifyContent: 'center', // Centra horizontalmente
                             alignItems: 'center',     // Centra verticalmente
-                            marginLeft: "15vh"
+                            marginLeft: "10vh"
                         }}>
                             {EnfoqueInfo.map((data) => (
                                 <Grid item  xs={3} sx={enfoqueStyles}>
@@ -86,7 +86,7 @@ function HomePage() {
                                     }}>
                                         {data.title}
                                     </Typography>
-                                    <Separador altura="5.50%"/>
+                                    <Separador altura="2vh"/>
                                     <div style={{
                                         display: "flex",
                                         justifyContent: 'center',
@@ -96,11 +96,11 @@ function HomePage() {
                                     >
                                         <img src={data.source} width={"100%"}/>
                                     </div>
-                                    <Separador altura="5.50%"/>
+                                    <Separador altura="2vh"/>
                                 </Grid>
                             ))}
                         </Grid>
-                        <Separador altura="50px"/>
+                        <Separador altura="12vh"/>
                     </Grid>
                 </Grid>
             </Container>
@@ -111,12 +111,12 @@ function HomePage() {
                         <Typography variant='h3' align='center' sx={{color: 'black', fontWeight:'bold'}}>
                             ¿Qué es <span style={{color:'blue'}}>Cyber Academy</span>?
                         </Typography>
-                        <Separador altura="5px"/>
+                        <Separador altura="5vh"/>
                         <Paper 
                             elevation={0}
                             sx={{
-                            padding:"15px",
-                            margin:"5px",
+                            padding:"2vh",
+                            margin:"5vh",
                             backgroundColor: "transparent",
                             color:"black",
                             borderRadius:5
@@ -131,40 +131,71 @@ function HomePage() {
                         <Typography variant='h3' align='center' sx={{color: 'black', fontWeight:'bold'}}>
                             ¿A quién esta dirigido?
                         </Typography>
-                        <Separador altura="5px"/>
+                        <Separador altura="5vh"/>
                         <Paper 
                             elevation={0}
                             sx={{
-                            padding:"15px",
-                            margin:"5px",
-                            backgroundColor: "transparent",
-                            color:"black",
-                            borderRadius:5
+                                padding:"2vh",
+                                margin:"10vh",
+                                backgroundColor: "transparent",
+                                color:"black",
+                                borderRadius:5
                             }}
                         >
-                            <Typography variant="h8" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sem nisl. Nam sollicitudin dictum molestie. Morbi blandit nisl in enim sollicitudin elementum. Duis aliquam lacus ac lacus placerat maximus. Integer scelerisque sed urna eu egestas. Donec et nisl vel turpis ornare malesuada. Etiam aliquet bibendum lectus, ut euismod massa dapibus sit amet. Fusce id ullamcorper est, a pretium dui. Pellentesque ornare ornare libero, sed convallis magna consectetur ut. Donec tempus tellus metus, id placerat sem tincidunt nec. Donec luctus urna ante, vitae lobortis est blandit quis. Donec maximus sem at nisl semper, non tempus dolor pretium. Nulla vel ligula ligula. Fusce sit amet volutpat felis, non condimentum sapien. Maecenas et leo et odio vulputate volutpat. 
-                            </Typography>
+                            <Grid container alignItems="center" justifyContent="space-evenly"  rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
+                                <Grid item xs ={4}>
+                                    <Paper 
+                                        elevation={1}
+                                        sx={{
+                                        padding:"2vh",
+                                        margin:"2vh",
+                                        backgroundColor: "transparent",
+                                        color:"black",
+                                        borderRadius:5
+                                        }}
+                                    >
+                                        <Typography variant="body3" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </Typography>
+                                    </Paper>
+                                </Grid>
+                                <Grid item xs ={4}>
+                                    <Paper 
+                                        elevation={1}
+                                        sx={{
+                                        padding:"2vh",
+                                        margin:"2vh",
+                                        backgroundColor: "transparent",
+                                        color:"black",
+                                        borderRadius:5
+                                        }}
+                                    >
+                                        <Typography variant="body3" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </Typography>
+                                    </Paper>
+                                </Grid>
+                            </Grid>
                         </Paper>
                     </Grid>
                 </Grid> 
             </Container>
-            <Separador altura="8vh"/>
+            <Separador altura="2vh"/>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#F1F1F1'}} >
                 <Paper 
                     elevation={0}
                     sx={{
-                    padding:"15px",
-                    margin:"5px",
-                    backgroundColor: "transparent",
-                    color:"black",
-                    borderRadius:5
+                        padding:"2vh",
+                        margin:"5vh",
+                        backgroundColor: "transparent",
+                        color:"black",
+                        borderRadius:5
                     }}
                 >
                     <Typography variant='h3' align='center' sx={{color: 'black', fontWeight:'bold'}}>
                         ¿Cómo Surge <span style={{color:'blue'}}>Cyber Academy</span>?
                     </Typography>
-                    <Separador altura="5px"/>
+                    <Separador altura="2vh"/>
                     <Typography variant="h8" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sem nisl. Nam sollicitudin dictum molestie. Morbi blandit nisl in enim sollicitudin elementum. Duis aliquam lacus ac lacus placerat maximus. Integer scelerisque sed urna eu egestas. Donec et nisl vel turpis ornare malesuada. Etiam aliquet bibendum lectus, ut euismod massa dapibus sit amet. Fusce id ullamcorper est, a pretium dui. Pellentesque ornare ornare libero, sed convallis magna consectetur ut. Donec tempus tellus metus, id placerat sem tincidunt nec. Donec luctus urna ante, vitae lobortis est blandit quis. Donec maximus sem at nisl semper, non tempus dolor pretium. Nulla vel ligula ligula. Fusce sit amet volutpat felis, non condimentum sapien. Maecenas et leo et odio vulputate volutpat. 
                     </Typography>
@@ -175,11 +206,11 @@ function HomePage() {
                 <Paper 
                     elevation={0}
                     sx={{
-                    padding:"15px",
-                    margin:"5px",
-                    backgroundColor: "transparent",
-                    color:"white",
-                    borderRadius:5
+                        padding:"2vh",
+                        margin:"5vh",
+                        backgroundColor: "transparent",
+                        color:"white",
+                        borderRadius:5
                     }}
                 >
                     <Separador altura="8vh"/>

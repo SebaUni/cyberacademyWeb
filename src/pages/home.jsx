@@ -3,9 +3,19 @@ import Separador from '../components/Separator';
 import { Container, Paper, Grid, Typography } from '@mui/material';
 import { Card, CardContent, CardMedia } from '@mui/material';
 import LogoAplicacion from '../assets/LogoAplicacion.png';
+import IconGraduation from '../assets/IconGraduation.png';
+import IconPlan from '../assets/IconPlan.png';
 
 //Vista asociada a la Seccion Home
 function HomePage() {
+
+    const Color_Eeri_Black= "#17191E";
+    const Color_Gunmetal= "#272E3D";
+    const Color_Celestial_Blue= "#109BE1";
+    const Color_Silver= "#B0B4B5";
+    const Color_Anti_Flash_White= "#F1F1F1";
+    const Color_White= "#FFFFFF";
+
     const containerStyles = {
         display: 'flex',
         justifyContent: 'center', // Centra horizontalmente
@@ -13,38 +23,80 @@ function HomePage() {
     };
     
     const enfoqueStyles = {
-        padding:"15px",
-        margin:"5px",
-        backgroundColor: '#109BE1',
+        marginLeft: "5vh",
+        marginRight: "5vh",
+        paddingLeft: "10vh",
+        paddingRight: "10vh",
+        paddingBottom: "5vh",
+        backgroundColor: Color_Celestial_Blue,
         color: 'black',
         borderRadius:5
     };
     
     const EnfoqueInfo = [
-        {"title":"Aprender","source":{LogoAplicacion}},
-        {"title":"Experimentar","source":{LogoAplicacion}},
-        {"title":"Algo Mas","source":{LogoAplicacion}},
+        {"title":"Aprender","source": IconGraduation},
+        {"title":"Experimentar","source": IconPlan},
+        {"title":"Algo Mas","source": IconGraduation},
     ];
     
     return (
-        <div style={{backgroundColor:"#F1F1F1"}}>
-            <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#17191E'}} >
+        <div style={{backgroundColor:Color_Anti_Flash_White}}>
+            <Container maxWidth={false} 
+                sx={{
+                    display:'flex', 
+                    justifyContent:'center', 
+                    backgroundColor: Color_Eeri_Black,
+                    paddingTop: "5.79%",
+                    paddingBottom: "2.82%",
+                }} 
+            >
                 <Grid container alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
                     <Grid item xs ={7}>
-                        <Separador altura="50px"/>
-                        <Typography variant='h3' align='justify' sx={{color: 'white', fontWeight:'bold'}}>
+                        <Separador altura="5vh"/>
+                        <Typography variant='h3' align='justify' 
+                            sx={{
+                                width: "100%", 
+                                alignItems: "center", 
+                                paddingLeft: "10.75%",
+                                color: Color_White, 
+                                fontWeight:'bold'
+                        }}
+                        >
                             Esto es un slogan representativo de <span style={{color:'blue'}}>Cyber Academy</span>
                         </Typography>
-                        <Separador altura="25px"/>
-                        <Grid container spacing={1} sx={containerStyles}>
+                        <Separador altura="12.50%"/>
+                        <Grid container spacing={1} sx={{
+                            display: 'flex',
+                            justifyContent: 'center', // Centra horizontalmente
+                            alignItems: 'center',     // Centra verticalmente
+                            marginLeft: "15vh"
+                        }}>
                             {EnfoqueInfo.map((data) => (
                                 <Grid item  xs={3} sx={enfoqueStyles}>
-                                    <Typography variant='h6' align='center' sx={{color: 'white', fontWeight:'bold'}}>
+                                    <Typography variant='h6' align='center' 
+                                    sx={{
+                                        width: "100%",
+                                        paddingLeft: "5vh",
+                                        paddingRight: "5vh",
+                                        display: "flex",
+                                        justifyContent: 'center',
+                                        alignItems: "center",
+                                        color: Color_White, 
+                                        fontWeight:'bold'
+                                    }}>
                                         {data.title}
                                     </Typography>
-                                    <div style={containerStyles}>
-                                        <img src={LogoAplicacion} width={"45%"}/>
+                                    <Separador altura="5.50%"/>
+                                    <div style={{
+                                        display: "flex",
+                                        justifyContent: 'center',
+                                        alignItems: "center",
+                                        paddingLeft: "8vh",
+                                    }}
+                                    >
+                                        <img src={data.source} width={"100%"}/>
                                     </div>
+                                    <Separador altura="5.50%"/>
                                 </Grid>
                             ))}
                         </Grid>
@@ -52,9 +104,8 @@ function HomePage() {
                     </Grid>
                 </Grid>
             </Container>
-            <Separador altura="50px"/>
+            <Separador altura="8vh"/>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#F1F1F1'}} >
-                <Separador altura="25px"/>
                 <Grid container alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
                     <Grid item xs ={6}>
                         <Typography variant='h3' align='center' sx={{color: 'black', fontWeight:'bold'}}>
@@ -98,7 +149,7 @@ function HomePage() {
                     </Grid>
                 </Grid> 
             </Container>
-            <Separador altura="50px"/>
+            <Separador altura="8vh"/>
             <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%", backgroundColor: '#F1F1F1'}} >
                 <Paper 
                     elevation={0}
@@ -126,27 +177,30 @@ function HomePage() {
                     sx={{
                     padding:"15px",
                     margin:"5px",
-                    backgroundColor: "#17191E",
+                    backgroundColor: "transparent",
                     color:"white",
                     borderRadius:5
                     }}
                 >
+                    <Separador altura="8vh"/>
                     <Typography variant='h3' align='center' sx={{fontWeight:'bold'}}>
                         ¿Cómo Surge <span style={{color:'blue'}}>Cyber Academy</span>?
                     </Typography>
-                    <Separador altura="25px"/>
-                    <Card sx={{minWidth: 300, flexGrow: 1}}>
+                    <Separador altura="8vh"/>
+                    <Card sx={{flexGrow: 1}}>
                         <CardMedia
                             component="iframe"
-                            height="315"
+                            backgroundColor="transparent"
+                            width="850vh"
+                            height="350vh"
                             image="https://www.youtube.com/embed/dQw4w9WgXcQ"
                             title="Video Presentacion"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         />
                     </Card>
+                    <Separador altura="10vh"/>
                 </Paper>
-                <Separador altura="50px"/>
             </Container>
         </div>
     );

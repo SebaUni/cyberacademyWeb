@@ -72,7 +72,7 @@ function HomePage() {
                             marginLeft: "5vh"
                         }}>
                             {EnfoqueInfo.map((data) => (
-                                <Grid item  xs={3} sx={enfoqueStyles}>
+                                <Grid item  xs={3} sx={enfoqueStyles} wrap="nowrap">
                                     <Typography variant='h6' align='center' 
                                     sx={{
                                         width: "100%",

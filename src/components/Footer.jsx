@@ -10,154 +10,403 @@ import LinkedinIcon from '@mui/icons-material/LinkedIn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LogoEmpresa from '../assets/LogoEmpresa.png';
-import LogoUniversidad from '../assets/LogoUniversidad.png';
-import LogoFeria from '../assets/LogosFeriaSoftware.png';
+import LogoUniversidad from '../assets/USMIconBlackWhite.png';
+import LogoFeria from '../assets/FESWIconBlackWhite.png';
 
-const containerStyles = {
-    display: 'flex',
-    justifyContent: 'center', // Centra horizontalmente
-    alignItems: 'center',     // Centra verticalmente
-};
+
 
 function Footer() {
+    const Color_Eeri_Black= "#17191E";
+    const Color_Gunmetal= "#272E3D";
+    const Color_Celestial_Blue= "#109BE1";
+    const Color_Silver= "#B0B4B5";
+    const Color_Anti_Flash_White= "#F1F1F1";
+    const Color_White= "#FFFFFF";
+
+    const containerStyles = {
+        display: 'flex',
+        justifyContent: 'center', // Centra horizontalmente
+        alignItems: 'center',     // Centra verticalmente
+    };
+
     return (
-        <div style={{backgroundColor:"#272E3D"}}>
-            <Box
-                component="footer"
+        <Container maxWidth="x1" sx={{
+            backgroundColor: Color_Gunmetal, 
+            height: "8.82%" 
+        }}
+        >
+            {/* Contenedor Superior del Pie de Nota*/}
+            <Grid 
+                container 
+                justifyContent="space-evenly" 
+                alignItems="center" 
+                spacing={1} 
+                columnSpacing={{ xs: 1, sm: 2, md: 3}}
                 sx={{
-                    py: 3,
-                    px: 2,
-                    mt: 'auto',
+                    backgroundColor: Color_Gunmetal,
+                    paddingLeft: "5.73%",
+                    paddingRight: "5.73%",
+                    paddingTop: "1.67%",
+                    paddingBottom: "0.60%",
+                    height: "50.67%",
                 }}
-                //bgcolor="primary.dark"
-                //color="primary.contrastText"
-                boxShadow={3}
+            >
+                {/* Acerca de Cyber Academy */}
+                <Grid item 
+                    xs={3}
+                    sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
                 >
-                <Grid container alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
-                    <Grid item xs ={3}>
-                        <Typography variant='h6' align='center' sx={{color: 'white', fontWeight:'bold'}}>
+                    <Box>
+                        <Typography
+                            variant="h6"
+                            component="a"
+                            sx={{
+                                mr: 2,
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "600",
+                                fontSize: "28",
+                                letterSpacing: "0.1px",
+                                color: Color_White,
+                                textDecoration: "none",
+                                marginTop: "6.33%",
+                                marginBottom: "6.33%",
+                                wordWrap: 'break-word',
+                            }}
+                            >
                             Acerca de Cyber Academy
                         </Typography>
-                        <Separador altura="5px"/>
-                        <Paper 
-                            elevation={0}
+                        <Typography
+                            variant="body3"
+                            align='left'
+                            component="a"
                             sx={{
-                            padding:"15px",
-                            margin:"5px",
-                            background:"none",
-                            color:"white",
-                            borderRadius:5
+                                mr: 2,
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "300",
+                                fontSize: "16",
+                                letterSpacing: "0",
+                                color: Color_White,
+                                width: "90%",
+                                textDecoration: "none",
+                                marginTop: "6.33%",
+                                marginBottom: "6.33%",
                             }}
                         >
-                            <Typography variant="h8" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
-                                Software para el aprendizaje de ciberseguridad de forma interactiva y personalizada
-                            </Typography>
-                            <Separador altura="10px"/>
-                            <Grid container justifyContent="space-bewteen" alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
-                                <Grid item xs={5}>
-                                    <InstagramIcon/>
-                                    <LinkedinIcon/>
-                                </Grid>
-                            </Grid>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs ={3}>
-                        <Typography variant='h6' align='center' sx={{color: 'white', fontWeight:'bold'}}>
+                            Software para el Aprendizaje de Ciberseguridad de forma interactiva y personalizada
+                        </Typography>
+                        <Typography
+                            variant="body3"
+                            align='left'
+                            component="a"
+                            sx={{
+                                mr: 2,
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "300",
+                                fontSize: "16",
+                                letterSpacing: "0",
+                                color: Color_White,
+                                width: "90%",
+                                textDecoration: "none",
+                                marginTop: "6.33%",
+                                marginBottom: "6.33%",
+                            }}
+                        >
+                            <InstagramIcon/>
+                            <LinkedinIcon/>
+                        </Typography>
+                    </Box>
+                </Grid>
+                {/* Enlaces */}
+                <Grid item 
+                    xs={3}
+                    sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        width: "90%"
+                    }}
+                >
+                    <Box>
+                        <Typography
+                            variant="h6"
+                            component="a"
+                            sx={{
+                                mr: 2,
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "600",
+                                fontSize: "28",
+                                letterSpacing: "0.1px",
+                                color: Color_White,
+                                textDecoration: "none",
+                                marginTop: "0",
+                                marginBottom: "0",
+                                wordWrap: 'break-word',
+                                marginTop: "6.33%",
+                            }}
+                            >
                             Enlaces
                         </Typography>
-                        <Separador altura="5px"/>
-                        <Paper 
-                            elevation={0}
+                        <Typography
+                            variant="body3"
+                            align='left'
+                            component="a"
                             sx={{
-                            padding:"15px",
-                            margin:"5px",
-                            background:"none",
-                            color:"white",
-                            borderRadius:5
+                                mr: 2,
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "300",
+                                fontSize: "16",
+                                letterSpacing: "0",
+                                color: Color_White,
+                                width: "90%",
+                                textDecoration: "none",
+                                marginTop: "2.33%",
+                                marginBottom: "1.33%",
                             }}
                         >
-                            <Typography variant="h8" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
-                                ¿Quienes Somos?
-                            </Typography>
-                            <Separador altura="5px"/>
-                            <Typography variant="h8" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
-                                Contacto
-                            </Typography>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs ={3}>
-                        <Typography variant='h6' align='center' sx={{color: 'white', fontWeight:'bold'}}>
+                            ¿Quienes Somos?
+                        </Typography>
+                        <Typography
+                            variant="body3"
+                            align='left'
+                            component="a"
+                            sx={{
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "300",
+                                fontSize: "16",
+                                letterSpacing: "0",
+                                color: Color_White,
+                                width: "90%",
+                                textDecoration: "none",
+                                marginTop: "1.33%",
+                                marginBottom: "6.33%",
+                            }}
+                        >
+                            Contacto
+                        </Typography>
+                    </Box>
+                </Grid>
+                {/* Contactanos */}
+                <Grid item 
+                    xs={3}
+                    sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <Box>
+                        <Typography
+                            variant="h6"
+                            component="a"
+                            sx={{
+                                mr: 2,
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "600",
+                                fontSize: "28",
+                                letterSpacing: "0.1px",
+                                color: Color_White,
+                                textDecoration: "none",
+                                marginTop: "0",
+                                marginBottom: "0",
+                                wordWrap: 'break-word',
+                                marginTop: "6.33%",
+                            }}
+                            >
                             Contáctanos
                         </Typography>
-                        <Separador altura="5px"/>
-                        <Paper 
-                            elevation={0}
+                        <Typography
+                            variant="body3"
+                            align='left'
+                            component="a"
                             sx={{
-                            padding:"15px",
-                            margin:"5px",
-                            background:"none",
-                            color:"white",
-                            borderRadius:5
+                                mr: 2,
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "300",
+                                fontSize: "16",
+                                letterSpacing: "0",
+                                color: Color_White,
+                                textDecoration: "none",
+                                marginTop: "2.33%",
+                                marginBottom: "1.33%",
                             }}
                         >
-                            <Typography variant="h8" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
-                                <PhoneIcon/> +0000000
-                            </Typography>
-                            <Separador altura="5px"/>
-                            <Typography variant="h8" align='justify' sx={{fontSize:'small', fontWeight:'bold'}} padding="1%">
-                                <EmailIcon/> mail@mail.com
-                            </Typography>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs ={3}>
-                        <Typography variant='h6' align='center' sx={{color: 'white', fontWeight:'bold'}}>
-                            Somos parte de
+                            <PhoneIcon/> 
+                            <div style={{width: "5vh"}}/>
+                            +56 912345678
                         </Typography>
-                        <Separador altura="5px"/>
-                        <Paper 
-                            elevation={0}
+                        <Typography
+                            variant="body3"
+                            align='left'
+                            component="a"
                             sx={{
-                            padding:"15px",
-                            margin:"5px",
-                            background:"none",
-                            color:"white",
-                            borderRadius:5
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "300",
+                                fontSize: "16",
+                                letterSpacing: "0",
+                                color: Color_White,
+                                textDecoration: "none",
+                                marginTop: "1.33%",
+                                marginBottom: "6.33%",
+                            }}
+                        >
+                            <EmailIcon/> 
+                            <div style={{width: "5vh"}}/>
+                            mail@mail.com
+                        </Typography>
+                    </Box>
+                </Grid>
+                {/* Somos Parte */}
+                <Grid item 
+                    xs={2}
+                    sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <Box>
+                        <Typography
+                            variant="h6"
+                            component="a"
+                            sx={{
+                                mr: 2,
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "600",
+                                fontSize: "28",
+                                letterSpacing: "0.1px",
+                                color: Color_White,
+                                textDecoration: "none",
+                                marginTop: "0",
+                                marginBottom: "0",
+                                wordWrap: 'break-word',
+                                marginTop: "6.33%",
+                            }}
+                            >
+                            Somos Parte de
+                        </Typography>
+                        <Typography
+                            variant="body3"
+                            align='left'
+                            component="a"
+                            sx={{
+                                mr: 2,
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "300",
+                                fontSize: "16",
+                                letterSpacing: "0",
+                                color: Color_White,
+                                width: "100%",
+                                textDecoration: "none",
+                                marginTop: "2.33%",
+                                marginBottom: "1.33%",
                             }}
                         >
                             <div style={containerStyles}>
-                                <img src={LogoUniversidad} width={"20%"}/>
+                                <img src={LogoUniversidad} height={"40vh"} width = {"150vh"} alt="logo pagina" />
                             </div>
-                            <Separador altura="5px"/>
+                        </Typography>
+                        <Typography
+                            variant="body3"
+                            align='left'
+                            component="a"
+                            sx={{
+                                display: { xs:"none", lg: "flex" },
+                                fontFamily: "Nanum Gothic",
+                                fontWeight: "300",
+                                fontSize: "16",
+                                letterSpacing: "0",
+                                color: Color_White,
+                                width: "100%",
+                                textDecoration: "none",
+                                marginTop: "1.33%",
+                                marginBottom: "6.33%",
+                            }}
+                        >
                             <div style={containerStyles}>
-                                <img src={LogoFeria} width={"20%"}/>
+                                <img src={LogoFeria} height={"40vh"} width = {"80vh"} alt="logo pagina" />
                             </div>
-                        </Paper>
-                    </Grid>
+                        </Typography>
+                    </Box>
                 </Grid>
-                <Divider
+            </Grid>
+            {/* Linea Divisora del Contenido*/}
+            <Divider
+                sx={{
+                    borderColor: Color_Silver,
+                    borderWidth: "1px",
+                    width: "95%",
+                    margin: '0 auto',
+                }}
+            />
+            {/* Contenedor Inferior del Pie de Nota*/}
+            <Grid 
+                container 
+                justifyContent="space-bewteen" 
+                alignItems="center" 
+                spacing={0} 
+                columnSpacing={{ xs: 1, sm: 2, md: 3}}
+                sx={{
+                    backgroundColor: Color_Gunmetal,
+                    paddingLeft: "3.67%",
+                    paddingRight: "3.67%",
+                    paddingTop: "0.60%",
+                    paddingBottom: "0.60%",
+                }}
+            >
+                {/* Logo de la Compañia */}
+                <Grid item 
+                    xs={true} 
                     sx={{
-                        borderColor: "#B0B4B5",
-                        borderWidth: "1px",
-                        width: "95%",
-                        margin: '0 auto'
+                        paddingRight: "45.99%",
                     }}
-                />
-                <Container maxWidth={false} sx={{display:'flex', justifyContent:'center', width:"100%"}} >
-                    <Grid container justifyContent="space-bewteen" alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
-                        <Grid item xs={6}>
-                            <img src={LogoEmpresa} alt="Logo de la Empresa" width={"35px"}></img>
-                        </Grid>
-                        <Grid item xs={6} sx={{textAlign: "right"}}>
-                                <Typography variant="p" className="col-sm" sx={{color: 'white', fontWeight:'bold'}}>
-                                    &copy;{new Date().getFullYear()} Cyber Academy | Todos los derechos reservados.
-                                </Typography>
-                        </Grid>
-                    </Grid>
-                </Container>
-            </Box>
-        </div>
-        
-    )
+                >
+                    <img src={LogoEmpresa} alt="Logo de la Empresa" width={"50vh"}></img>
+                </Grid>
+                {/* Derechos de Chibi tech*/}
+                <Grid item 
+                    xs={true} 
+                    sx={{
+                        paddingLeft: "46.00%",
+                    }}
+                >
+                    <Typography
+                        variant="body3"
+                        noWrap
+                        component="a"
+                        sx={{
+                            mr: 2,
+                            display: { xs:"none", lg: "flex" },
+                            fontFamily: "Nanum Gothic",
+                            fontWeight: "600",
+                            fontSize: "16",
+                            letterSpacing: "0.1px",
+                            color: Color_White,
+                            textDecoration: "none",
+                            marginTop: "0.65%",
+                            marginBottom: "0.65%",
+                        }}
+                        >
+                        <span>&copy;{new Date().getFullYear()} Cyber Academy | Todos los derechos reservados.</span>
+                    </Typography>
+                </Grid>
+            </Grid>
+        </Container>
+    );
 }
 
 export default Footer

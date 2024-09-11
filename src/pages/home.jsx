@@ -69,7 +69,7 @@ function HomePage() {
                             display: 'flex',
                             justifyContent: 'center', // Centra horizontalmente
                             alignItems: 'center',     // Centra verticalmente
-                            marginLeft: "10vh"
+                            marginLeft: "5vh"
                         }}>
                             {EnfoqueInfo.map((data) => (
                                 <Grid item  xs={3} sx={enfoqueStyles}>
